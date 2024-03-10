@@ -8,7 +8,7 @@ int main()
     cout << 5 + 2 << endl;      // result is 7
     cout << 5 / 2 << endl;      // result is 2, a whole number
     cout << 5.0 / 2 << endl;      // result is 2.5. To get that, make one or 
-                            //both into a floaing point number by adding a decimal point
+                            //both into a floating point number by adding a decimal point
     cout << 5 % 2 << endl;  // 5 modulo 2, result is the remainder, which is 1
 
     // unary operators
