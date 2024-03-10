@@ -34,9 +34,33 @@ int main()
     cout << counter2-- << endl;     // result is 9 is printed. Post-decrement
     cout << counter2 << endl;        // result is 8 is printed
 
-    system("cls");       // does not work for me. 
+    // system("cls");       // does not work for me. 
             // It says sh: cls: command not found
 
-    system("clear");        // this one doesn't clear my screen on my debug 
+    // system("clear");        // this one doesn't clear my screen on my debug 
                      // console, but it doesn't say command not found, either
+
+    // relational operators
+    // <, >, <=, >=, ==, !=
+    int a = 5, b = 5;
+    cout << (a < b) << endl;     // result is 0, meaning false
+    cout << (a > b) << endl;     // result is 0, meaning false
+    cout << (a <= b) << endl;    // result is 1, meaning true   
+    cout << (a != b) << endl;    // result is 0, meaning false
+    cout << (a == b) << endl;    // result is 1, meaning true
+
+    // logical operators
+    // &&  ||  !        those are and, or and not
+
+    b = 8;      // a is already 5
+    cout << (a == 5 && b == 5) << endl;    // and. result is 0, meaning false
+
+    cout << (a == 5 || b == 5) << endl;    // or. result is 1, meaning true
+
+    // not  !
+    cout << !(a == 5 || b == 5) << endl;   // not or. result is 0, meaning false
+
+    cout << (a == 5 && b == 5+3) << endl;    // 5+3 executes before the ==, 
+            // so this is 1, or true, since b == 8
+
 }
