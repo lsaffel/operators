@@ -63,4 +63,39 @@ int main()
     cout << (a == 5 && b == 5+3) << endl;    // 5+3 executes before the ==, 
             // so this is 1, or true, since b == 8
 
+    // operators of assignment
+    // =, +=, -=, *=, /=, %=
+
+    int x = 5;
+
+    x += 7;     // same thing as x = x + 7
+
+    cout << x << endl;      // result is 12
+
+    x -= 7;     // same thing as x = x - 7
+
+    // some examples to work through
+    a = 5, b = 4;
+    cout << a + (b++) << endl;  // result is 9. b is now 5. a is still 5
+    cout << (--a) + b << endl;  // result is 9. a is now 4 and b is still 5
+
+    cout << !(true && false) << endl; // result is 1, meaning true
+    cout << (true && false || true) << endl;  // result is 1, meaning true
+
+    x = 7;
+    cout << (++x <= 9 && x + 2 >= 10) << endl;  // result is 1, true
+        // that means that x becomes 8 for the second half of this statement
+
+    cout << "Hey there! Here's where we are!" << endl;
+    int y = 3;
+    cout << (y == y++) << endl;     // result is 1. y becomes 4,
+            // but only after the expression == is evaluated, so it's true
+
+    float z = 8;
+    z += 2;                 // z is now 10
+    cout << z << endl;       // result is 10
+
+    z /= 2;                 // z is now 5
+    cout << z << endl;      // result is 5
+
 }

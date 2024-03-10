@@ -17,4 +17,7 @@ logical operators
 precedence of operators, from highest to lowest:  
 arithmetic  
 relational  
-logical
+logical  
+assignment
+
+Some example statements testing precedence of the operators
